@@ -19,7 +19,7 @@ class Image {
     };
 
     // should return the pixel(RGBPixel or GreyscalePixel) at [row,col]
-    T Image::get(int row, int col) {
+    T get(int row, int col) {
 
     };
 

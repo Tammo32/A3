@@ -1,0 +1,20 @@
+
+*** Q3 PART 1 ***
+Exam date: 10/6/2021 (738256) 
+Result release date: 12/7/2021 (738288) 
+Days to get results = 4143831962/4294934747/4143834085
+Exam end date: 11/7/2022
+Result Date Next Year: 4143831963/4294934750/4143834086
+
+*** Q3 PART 2 ***
+date1: 2/6/1982, date2: 11/12/2017
+date1 < date2
+
+*** Q3 PART 3 ***
+date3: 20/6/1918
+date3++: 21/7/1919
+date3--: 20/6/1918
+
+*** Q3 PART 4 ***
+date3: 20/6/1918
+Segmentation fault (core dumped)

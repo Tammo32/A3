@@ -1,6 +1,7 @@
 #include <exception>
 #include <stdexcept>
 #include "RGBPixel.h"
+#include <iostream>
 
 // Construct a RGBPixel with all channels initialized to 0
 RGBPixel::RGBPixel() {
@@ -21,7 +22,7 @@ RGBPixel::~RGBPixel() {
 unsigned int RGBPixel::getBrightness() const {
     unsigned int red = r;
     unsigned int green = g;
-    unsigned int blue = g;
+    unsigned int blue = b;
 
     unsigned int brightness = (red+green+blue)/3;
     return brightness;
@@ -33,5 +34,7 @@ unsigned int RGBPixel::getBrightness() const {
 // 'g' <- green channel
 // 'b' <- blue channel
 unsigned int& RGBPixel::operator[](const char channel) {
-
+    if(channel == 'r') {return r;}
+    if(channel == 'g') {return g;}
+    if(channel == 'b') {return b;}
 };

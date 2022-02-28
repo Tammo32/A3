@@ -28,5 +28,5 @@ unsigned int GreyscalePixel::getBrightness() const {
 // channel value of the pixel
 // 'i' <- intensity
 unsigned int& GreyscalePixel::operator[](const char channel) {
-    return channel[&intensity];
+    return intensity;
 };

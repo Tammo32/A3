@@ -40,6 +40,29 @@ public:
     /* YOU MAY ADD YOUR MODIFICATIONS HERE       */
     /*                                           */
 
+
+    bool operator==(const Date& other) const;
+    bool operator!=(const Date& other) const;
+    bool operator>(const Date& other) const; 
+    
+    double& operator[](const int index);
+    double& operator[](const std::string dmy);
+
+    // Date& operator+=(const Date& other);
+    Date& operator+=(int value);
+    Date operator+(const Date& other) const;
+    Date operator-(const Date& other) const;
+
+    Date& operator=(const Date& other);
+    Date& operator=(const Date&& other);
+
+    // Increment operator
+    // Date& operator++();
+    Date operator++(int);
+
+    // Decrement operator    
+    // Date& operator--();
+    Date operator--(int);
     
 private:
     /*                                           */
@@ -50,5 +73,7 @@ private:
     unsigned int day;
 };
 
+std::ostream& operator<<(std::ostream& os, Date& date);
+// std::ostream& operator<<(std::ostream& os, Date& date, Date& other);
 
 #endif //COSC1076_A3_DATE_H
